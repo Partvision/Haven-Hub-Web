@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haven Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #121212, #272727);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            background-color: rgba(30, 30, 30, 0.8);
+            border-radius: 12px;
+            padding: 60px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            width: 80%;
+            max-width: 700px;
+            animation: floatIn 2s ease-out forwards, float 4s ease-in-out infinite;
+        }
+
+        h1 {
+            color: #64ffda;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px rgba(100, 255, 218, 0.8);
+        }
+
+        p {
+            color: #ddd;
+            line-height: 1.7;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        .use-button {
+            display: inline-block;
+            background-color: #64ffda;
+            color: #121212;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .use-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+            background-color: #4ac29d;
+        }
+
+        @keyframes floatIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .supported-games {
+            margin-top: 50px;
+        }
+
+        .supported-games h2 {
+            color: #64ffda;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            text-shadow: 0 0 5px rgba(100, 255, 218, 0.8);
+        }
+
+        .game-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .game-button {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .game-button:hover {
+            background-color: #555;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Haven Hub</h1>
+        <p>
+            Unleash the full potential of your Roblox experience with Haven Hub, the ultimate script for enhanced gameplay.
+        </p>
+        <a href="https://github.com/Partvision/Haven-Hub-Src" class="use-button" target="_blank">
+            Use Haven Hub
+        </a>
+
+        <div class="supported-games">
+            <h2>Supported Games</h2>
+            <div class="game-buttons">
+                <a href="https://github.com/Partvision/Haven-Hub-Src" class="game-button" target="_blank">Roblox Fisch (Coming Soon)</a>
+                <a href="https://github.com/Partvision/Haven-Hub-Src" class="game-button" target="_blank">Pets Go (Coming Soon)</a>
+                <a href="https://github.com/Partvision/Haven-Hub-Src" class="game-button" target="_blank">Pet Simulator 99 (Coming Soon)</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
